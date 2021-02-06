@@ -7,6 +7,6 @@ RUN apt update && apt install git -y
 RUN apt install maven -y
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 RUN cd boxfuse-sample-java-war-hello
-RUN mvn packege
+#RUN mvn packege
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
