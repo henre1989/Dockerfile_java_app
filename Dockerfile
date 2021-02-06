@@ -1,4 +1,6 @@
 FROM ubuntu
+ENV TZ=Europe/Moskow
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt update && apt install git -y
 RUN apt install default-jdk -y
 RUN apt install tomcat9 -y
