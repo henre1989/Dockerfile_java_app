@@ -7,6 +7,6 @@ RUN apt install default-jdk -y
 RUN apt install maven -y
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 #RUN cd boxfuse-sample-java-war-hello
-RUN mvn -f /usr/local/tomcat/boxfuse-sample-java-war-hello/pom.xml
+#RUN mvn -f /usr/local/tomcat/boxfuse-sample-java-war-hello/pom.xml
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
